@@ -20,6 +20,7 @@ exports.create = async (req, res) => {
 
     res.status(200).json({
       success: true,
+      id: newPost.id,
       title: newPost.title,
       description: newPost.description,
       createdAt: newPost.createdAt,
